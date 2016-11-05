@@ -1,0 +1,2 @@
+module ChapolinHelper
+end

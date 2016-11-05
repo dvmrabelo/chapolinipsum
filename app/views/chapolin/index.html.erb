@@ -1,0 +1,12 @@
+
+<%= form_tag(root_path, method: :get) do %>
+<%= label_tag 'Quantidade de parágrafos:' %>
+<%= number_field_tag 'qtd', nil%>
+<%= submit_tag 'Gerar' %>
+<% end %>
+
+<% if (@paragraphs) %>
+  <%= text_area_tag 'paragraph', @paragraphs, size: "60x10" %>  
+<% else %>
+  <%= text_area_tag 'paragraph', nil, size: "60x10" %>
+<% end %>

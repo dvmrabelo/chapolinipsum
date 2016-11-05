@@ -1,0 +1,30 @@
+
+
+    <div class="navbar navbar-default navbar-static-top nav-color">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Chapolin Ipsum</a>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-1 text-center">
+      <div class="row">
+        <h3><strong> Sigam-me os bons!</strong></h3>
+        <%= image_tag 'Chapolin.jpg', class: 'img-circle' %>
+      </div><!--/row-->
+    </div>
+
+    <div class="container-fluid bg-2 text-center">
+    
+      <div class="row">
+        <%= bootstrap_flash %>
+        <%= yield %>
+      </div><!--/row-->
+
+
+    </div> <!-- /container -->
+
